@@ -1,0 +1,253 @@
+html {
+    position: relative;
+}
+
+body {
+    display: flex;
+    margin: 0px auto 0px auto;
+    padding: 0px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    user-select: none;
+    background-color: rgb(50, 50, 63);
+}
+
+.menu-foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto 0px auto;
+}
+
+.interface {
+    height: 100%;
+    background-color: rgb(31, 31, 34);
+    color: white;
+    width: 1600px;
+    margin: 0px auto 0px auto;
+    padding: 10px;
+    padding-inline: 0px;
+    box-shadow: 0px 0px 20px black;
+}
+
+.interface-interna{
+    margin: 0px auto 0px auto;
+    max-width: 800px;
+}
+
+.cabeza {
+    padding: 10px;
+    padding-inline: 0px;
+    margin: 0px auto 0px auto;
+}
+
+.menu-container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+h1.logo {
+    font-size: 65px;
+    font-weight: 400;
+    margin: 0px auto 0px auto;
+    color: rgb(255, 255, 255);
+    text-shadow:0px 0px 7px rgb(86, 86, 255);
+    -webkit-text-stroke: rgb(202, 202, 202);
+	-webkit-text-stroke-width: .5px;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 20px rgb(203, 203, 255);
+    }
+    to {
+      text-shadow: 0 0 30px rgb(73, 73, 255)}
+}
+
+
+.portfolioh1 {
+    color: rgb(149, 149, 255);
+}
+
+.foto {
+    border-radius: 50%;
+    height: 200px;
+    box-shadow: 0px 0px 7px rgb(86, 86, 255);
+}
+
+.me {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0);
+    padding: 91px 82px 91px 82px;
+    border-radius: 50%;
+    transition: ease 0.3s;
+}
+
+.me:hover{
+    backdrop-filter: blur(2px);
+    background-color: rgba(41, 41, 41, 0.356);
+    color: rgb(255, 255, 94);
+    box-shadow: 0px 0px 10px rgb(255, 255, 94);
+}
+
+.frontend {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-size: 25px;
+}
+
+h2 {
+    animation: glitch 1s linear infinite alternate;
+}
+
+@keyframes glitch{
+    2%,64%{
+      transform: translate(1px,0) skew(0deg);
+    }
+    4%,60%{
+      transform: translate(-1px,0) skew(0deg);
+    }
+    62%{
+      transform: translate(0,0) skew(5deg); 
+    }
+}
+
+.frontend-p {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    margin: 20px;
+    margin-inline: 0px;
+    font-size: 23.32px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 30px auto 30px auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding-inline: 10px;
+    transition: ease 0.3s;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: rgb(149, 149, 255);
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+section h1{
+    color: rgb(255, 255, 94);
+    font-size: 40px;
+    text-shadow: 0px 0px 7px rgb(86, 86, 255);
+}
+
+section .coffee{
+    height: 200px;
+    border: solid 2px;
+    color: rgb(255, 255, 94);
+    transition: ease 0.3s;
+}
+
+section .coffee:hover{
+    height: 200px;
+    border: solid 2px;
+    color: rgb(86, 86, 255);
+}
+
+.click_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coffee_click{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 400px;
+    transition: ease 0.2s;
+}
+
+
+.coffee_click:hover{
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.623);
+    color: rgb(255, 255, 94);
+}
+
+section p {
+    font-size: 18px;
+}
+
+.div{
+    padding: 0;
+    margin: 0;
+}
+
+.skills p{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 30px auto 30px auto;
+    padding-inline: 20px;
+    font-size: 40px;
+    text-shadow: 0px 0px 4px rgb(0, 0, 0);
+}
+
+.skills p:hover{
+    text-shadow: 0px 0px 4px viol;
+}
+
+.skill-html{
+    color: chocolate;
+}
+
+.skill-css{
+    color: rgb(73, 131, 255);
+}
+
+.skill-js{
+    color: rgb(255, 255, 56);
+}
+
+.skill-react{
+    color: rgb(118, 173, 255);
+}
