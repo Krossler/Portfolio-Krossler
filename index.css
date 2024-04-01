@@ -117,12 +117,18 @@ h2 {
 }
 
 .punto-coffee{
-    color: chocolate;
-    text-shadow: 0px 0px 5px chocolate;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px rgb(255, 166, 0);
 }
 
 .punto-pathfinder{
-    color: rgb(199, 175, 255);
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px rgb(58, 58, 190);
+}
+
+.punto-religare {
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px rgb(207, 41, 41);
 }
 
 @keyframes glitch{
@@ -268,4 +274,8 @@ section p {
 
 .skill-react{
     color: rgb(118, 173, 255);
+}
+
+.skill-bootstrap {
+    color: rgb(105, 50, 207);
 }
