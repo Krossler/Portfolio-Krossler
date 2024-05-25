@@ -14,6 +14,64 @@ body {
     background-color: rgb(50, 50, 63);
 }
 
+/*Navbar*/
+
+#btn-menu{
+    position: absolute;
+    cursor: pointer;
+    font-size: 38px;
+    color: rgb(255, 255, 255);
+    margin: 20px;
+}
+
+.menu-burguer{
+    padding: 0;
+}
+
+.navbar{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(31, 31, 34);
+    box-shadow: 0px 0px 20px black;
+    height: 100%;
+    width: 200px;
+    transform: translateX(-100px) scaleX(0%);
+    transition: 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.navbar-container{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-top: 60px;
+    
+}
+
+.navbar-container a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(90, 90, 179);
+    border-radius: 15px;
+    margin-block: 10px;
+    padding-inline: 5px;
+    text-align: center;
+    font-size: 22px;
+    
+}
+
+.navbar-container a:hover{
+    background-color: rgb(156, 156, 156);
+    color: rgb(90, 90, 179);
+}
+
+.navbar.open{
+    transform: translateX(0px) scaleX(100%);
+
+}
+
+/*Navbar*/
+
 .menu-foto-container{
     display: flex;
     align-items: center;
@@ -33,7 +91,6 @@ body {
     color: white;
     width: 1200px;
     margin: 0px auto 0px auto;
-    padding: 10px;
     padding-inline: 0px;
     box-shadow: 0px 0px 20px black;
 }
@@ -44,7 +101,6 @@ body {
 }
 
 .cabeza {
-    padding: 10px;
     padding-inline: 0px;
     margin: 0px auto 0px auto;
 }
@@ -123,9 +179,9 @@ h2 {
     display: flex;
     justify-content: center;
     font-weight: 400;
-    margin: 20px auto;
-    font-size: 23.32px;
-    max-width: 1000px;
+    margin: 40px auto 0px auto;
+    font-size: 22px;
+    max-width: 800px;
 }
 
 .menu {
@@ -203,14 +259,6 @@ nav ul li a:hover {
     font-size: 16px;
 }
 
-
-
-
-
-
-
-
-
 /* Abrir y cerrar con hover icones del perfil */
 
 section{
@@ -282,13 +330,13 @@ section p {
     align-items: center;
     list-style: none;
     font-size: 40px;
-    margin-inline: 20px;
     text-shadow: 0px 0px 4px rgb(0, 0, 0);
     transition: 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    margin-block: 20px;
 }
 
 .skills p i{
-    width: 50px;
+    width: 80px;
 }
 
 .skills h1{
@@ -321,6 +369,10 @@ section p {
     color: rgb(135, 212, 99);
 }
 
+.skill-bootstrap {
+    color: rgb(123, 94, 255);
+}
+
 .skills p:hover{
     text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.438);
 }
@@ -328,22 +380,29 @@ section p {
 
 @media (max-width: 1000px){
 
-        section .work-img{
-            height:300px;
-        }
-        
-        .btn_click{
-            height: 298px;
-            width: 530px;
-        }
-
-        .menu-foto {
-            flex-direction: column;
-        }
-        .skills-container{
-            margin-top: 30px;
-        }
+    section .work-img{
+        height:300px;
     }
+    
+    .btn_click{
+        height: 298px;
+        width: 530px;
+    }
+    .menu-foto {
+        flex-direction: column;
+    }
+    .skills-container{
+        margin-top: 30px;
+        max-width: 260px;
+    }
+    .skills{
+        margin: 0;
+    }
+    .skills p i{
+        width: 120px;
+        margin: -20px;
+    }
+}
 
     
 
