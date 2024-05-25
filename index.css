@@ -6,7 +6,7 @@ body {
     display: flex;
     margin: 0px auto 0px auto;
     padding: 0px;
-    font-family: "Pixelify Sans", sans-serif;
+    font-family: "Pixelify Sans", sans-serif /*"Source Code Pro", monospace*/;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -14,18 +14,24 @@ body {
     background-color: rgb(50, 50, 63);
 }
 
+.menu-foto-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .menu-foto {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px auto 0px auto;
+    margin-top: 10px;
 }
 
 .interface {
     height: 100%;
     background-color: rgb(31, 31, 34);
     color: white;
-    width: 1600px;
+    width: 1200px;
     margin: 0px auto 0px auto;
     padding: 10px;
     padding-inline: 0px;
@@ -34,7 +40,7 @@ body {
 
 .interface-interna{
     margin: 0px auto 0px auto;
-    max-width: 800px;
+    max-width: 1200px;
 }
 
 .cabeza {
@@ -82,24 +88,6 @@ h1.logo {
     box-shadow: 0px 0px 7px rgb(86, 86, 255);
 }
 
-.me {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgba(255, 255, 255, 0);
-    padding: 91px 82px 91px 82px;
-    border-radius: 50%;
-    transition: ease 0.3s;
-}
-
-.me:hover{
-    backdrop-filter: blur(2px);
-    background-color: rgba(41, 41, 41, 0.356);
-    color: rgb(255, 255, 94);
-    box-shadow: 0px 0px 10px rgb(255, 255, 94);
-}
-
 .frontend {
     display: flex;
     justify-content: center;
@@ -135,9 +123,9 @@ h2 {
     display: flex;
     justify-content: center;
     font-weight: 400;
-    margin: 20px;
-    margin-inline: 0px;
+    margin: 20px auto;
     font-size: 23.32px;
+    max-width: 1000px;
 }
 
 .menu {
@@ -171,6 +159,60 @@ nav ul li a:hover {
     color: rgb(149, 149, 255);
 }
 
+.li-container{
+    display: flex;
+}
+
+.li-container li{
+    display: flex;
+}
+
+/* Abrir y cerrar con hover icones del perfil*/
+
+.iconsi{
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    margin: 0;
+    color: rgba(149, 149, 255, 0);
+    transform: translateY(30px);
+}
+
+#iw, #ig, #gh, #dw {
+    transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    font-size: 1px;;
+}
+
+#iwh:hover #iw{
+    color: rgb(149, 149, 255);
+    font-size: 16px;
+}
+
+#iig:hover #ig{
+    color: rgb(149, 149, 255);
+    font-size: 16px;
+}
+
+#igh:hover #gh{
+    color: rgb(149, 149, 255);
+    font-size: 16px;
+}
+
+#idw:hover #dw{
+    color: rgb(149, 149, 255);
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+/* Abrir y cerrar con hover icones del perfil */
+
 section{
     display: flex;
     align-items: center;
@@ -188,7 +230,7 @@ section h1{
 }
 
 section .work-img{
-    height: 200px;
+    height: 350px;
     border: solid 1px;
     color: rgb(123, 123, 255);
     transition: 3ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -206,8 +248,8 @@ section .work-img{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
-    width: 402px;
+    height: 351px;
+    width: 619px ;
     transition: ease 0.3s;
     color: rgba(255, 255, 255, 0);
 }
@@ -229,21 +271,34 @@ section p {
 .skills-container{
     padding: 0;
     margin: 0;
-}
-
-.skills{
-    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .skills p{
-    display: inline;
+    display: inline-block;
     justify-content: center;
     align-items: center;
     list-style: none;
-    margin: 30px 20px 30px 20px;
     font-size: 40px;
+    margin-inline: 20px;
     text-shadow: 0px 0px 4px rgb(0, 0, 0);
     transition: 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.skills p i{
+    width: 50px;
+}
+
+.skills h1{
+    margin: 0;
+}
+
+.skills h2{
+    align-items: center;
+    text-align: center;
+    display: flex;
 }
 
 .skill-html{
@@ -270,14 +325,35 @@ section p {
     text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.438);
 }
 
-@media (max-width: 420px){
+
+@media (max-width: 1000px){
 
         section .work-img{
-            height: 150px;
+            height:300px;
         }
         
         .btn_click{
-            height: 150px;
-            width: 301px;
+            height: 298px;
+            width: 530px;
+        }
+
+        .menu-foto {
+            flex-direction: column;
+        }
+        .skills-container{
+            margin-top: 30px;
         }
     }
+
+    
+
+@media (max-width: 539px){
+    section .work-img{
+        height: 200px;
+    }
+    
+    .btn_click{
+        height: 198px;
+        width: 352px;
+    }
+}
