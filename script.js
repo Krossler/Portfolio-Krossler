@@ -12,4 +12,12 @@ function toggleMenu () {
     }
 }
 
+function closeMenu () {
+    if (menu.classList.contains("open"))
+        menu.classList.remove("open")
+
+    else {
+    }
+}
+
 // Open Menu

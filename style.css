@@ -67,7 +67,6 @@ body {
 
 .navbar.open{
     transform: translateX(0px) scaleX(100%);
-
 }
 
 /*Navbar*/
