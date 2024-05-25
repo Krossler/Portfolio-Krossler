@@ -407,6 +407,10 @@ section p {
     
 
 @media (max-width: 539px){
+
+    h1.logo{
+        margin-top: 60px;
+    }
     section .work-img{
         height: 200px;
     }
