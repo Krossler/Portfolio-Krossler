@@ -380,6 +380,10 @@ section p {
 
 @media (max-width: 1000px){
 
+    h1.logo{
+        margin-top: 60px;
+    }
+
     section .work-img{
         height:300px;
     }
